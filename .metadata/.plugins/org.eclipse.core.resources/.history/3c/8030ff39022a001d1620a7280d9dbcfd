@@ -1,0 +1,31 @@
+package com.ead.course.models;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import lombok.Data;
+
+@Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Entity
+@Table(name = "TB_MODULES")
+public class LessonModel {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private UUID lessonId;
+	private String title;
+	private String description;
+	private String videoUrl;
+	private LocalDateTime creationDate;
+
+}

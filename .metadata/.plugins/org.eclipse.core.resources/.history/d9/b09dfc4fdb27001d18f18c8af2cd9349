@@ -1,0 +1,7 @@
+package com.ead.authuser.services.impl;
+
+import com.ead.authuser.services.UserService;
+
+public class UserServiceImpl implements UserService {
+
+}
