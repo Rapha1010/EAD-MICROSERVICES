@@ -1,8 +1,0 @@
-package com.ead.authuser.dtos;
-
-import lombok.Data;
-
-@Data
-public class UserDto {
-
-}
